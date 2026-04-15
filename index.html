@@ -20,8 +20,8 @@ body{background:var(--black);color:var(--sand);font-family:'Barlow',sans-serif;o
 a{color:inherit;text-decoration:none}
 
 /* NAV */
-nav{position:sticky;top:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:90px;background:rgba(13,13,15,0.97);border-bottom:1px solid var(--border)}
-.nav-logo img{height:78px;width:auto;cursor:pointer}
+nav{position:sticky;top:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:72px;background:rgba(13,13,15,0.97);border-bottom:1px solid var(--border)}
+.nav-logo img{height:54px;width:auto;cursor:pointer}
 .nav-links{display:flex;gap:32px;list-style:none}
 .nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(240,234,216,0.55);transition:color .2s;cursor:pointer}
 .nav-links a:hover{color:var(--orange-light)}
@@ -84,7 +84,7 @@ h2.sec-title{font-family:'Bebas Neue',cursive;font-size:clamp(42px,5vw,66px);lin
 .svc:hover{background:#1e2028}.svc:hover::after{transform:scaleX(1)}
 .svc-num{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;color:var(--orange);margin-bottom:10px}
 .svc-name{font-family:'Bebas Neue',cursive;font-size:34px;letter-spacing:1px;margin-bottom:14px}
-.svc-desc{font-size:14px;font-weight:300;line-height:1.8;color:rgba(240,234,216,.75);max-width:440px}
+.svc-desc{font-size:14px;font-weight:300;line-height:1.8;color:var(--muted);max-width:440px}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
 .tag{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;border:1px solid rgba(42,143,212,.35);color:var(--blue-light);border-radius:2px}
 .svc-cta{margin-top:24px}
@@ -100,7 +100,7 @@ h2.sec-title{font-family:'Bebas Neue',cursive;font-size:clamp(42px,5vw,66px);lin
 .fc:hover{background:#0f1012}.fc:hover::after{transform:scaleX(1)}
 .fc-type{font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:4px 10px;margin-bottom:18px;border:1px solid rgba(42,143,212,.4);color:var(--blue-light);border-radius:2px;display:inline-block}
 .fc-name{font-family:'Bebas Neue',cursive;font-size:26px;letter-spacing:1.5px;margin-bottom:8px}
-.fc-desc{font-size:13px;font-weight:300;line-height:1.65;color:rgba(240,234,216,.75)}
+.fc-desc{font-size:13px;font-weight:300;line-height:1.65;color:var(--muted)}
 .fc-svg{height:120px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
 
 /* COAST */
@@ -113,7 +113,7 @@ h2.sec-title{font-family:'Bebas Neue',cursive;font-size:clamp(42px,5vw,66px);lin
 .cf-icon{width:34px;height:34px;flex-shrink:0;background:rgba(240,123,32,.1);border:1px solid rgba(240,123,32,.3);display:flex;align-items:center;justify-content:center;border-radius:2px}
 .cf-icon svg{width:16px;height:16px}
 .cf-title{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--sand);margin-bottom:3px}
-.cf-desc{font-size:13px;font-weight:300;line-height:1.6;color:rgba(240,234,216,.75)}
+.cf-desc{font-size:13px;font-weight:300;line-height:1.6;color:var(--muted)}
 
 /* ROUTES */
 .routes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:52px}
@@ -280,9 +280,8 @@ textarea.ff{resize:vertical;min-height:90px}
   nav{padding:0 16px}
   .nav-links,.nav-cta{display:none}
   .hamburger{display:flex}
-  .hero{grid-template-columns:1fr;padding:80px 20px 56px;display:flex;flex-direction:column}
-  .hero-left{order:2;padding-right:0}
-  .hero-right{order:1;height:260px;clip-path:none;margin-bottom:24px;display:flex}
+  .hero{grid-template-columns:1fr;padding:90px 20px 56px}
+  .hero-right{display:none}
   .hero-btns-grid{max-width:100%}
   .sec{padding:60px 20px}
   .svc-grid,.test-grid{grid-template-columns:1fr}
@@ -377,7 +376,6 @@ textarea.ff{resize:vertical;min-height:90px}
 
 <!-- SERVICES -->
 <section class="sec" id="servicios" style="background:var(--charcoal)">
-
   <div class="sec-lbl">Lo que hacemos</div>
   <h2 class="sec-title">NUESTROS <span class="grad-text">SERVICIOS</span></h2>
   <p style="font-size:15px;font-weight:300;line-height:1.8;color:rgba(240,234,216,.55);max-width:560px">Dos cosas y las dos bien hechas — reparamos lo que nos traigan y alquilamos bicis para explorar la Costa Blanca.</p>
@@ -401,7 +399,6 @@ textarea.ff{resize:vertical;min-height:90px}
 
 <!-- FLEET -->
 <section class="sec" style="background:var(--black)" id="flota">
-
   <div class="sec-lbl">Flota disponible</div>
   <h2 class="sec-title">BICIS DE <span class="blue-text">ALQUILER</span></h2>
   <div class="fleet-grid">
@@ -443,29 +440,46 @@ textarea.ff{resize:vertical;min-height:90px}
 </section>
 
 <!-- COAST -->
-<section class="sec" style="background:var(--blue-dark)" id="costa">
-  <div class="sec-lbl">Costa Blanca</div>
-  <h2 class="sec-title">NUESTRA<br><span class="grad-text">COSTA</span></h2>
-  <p style="font-size:15px;font-weight:300;line-height:1.75;color:rgba(240,234,216,.55);margin-top:12px;max-width:600px">340 km de costas, sierras de hasta 1.558 m y mas de 300 dias de sol al año. Alicante es el mejor escenario para montar en bici.</p>
-  <div class="coast-features" style="margin-top:40px">
-    <div class="cf">
-      <div class="cf-icon"><svg viewBox="0 0 16 16" fill="none" stroke="#f07b20" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="6" r="3"/><path d="M8 9 Q8 14 8 14"/><path d="M5 12 Q8 14 11 12"/></svg></div>
-      <div><div class="cf-title">5 min del aeropuerto</div><p class="cf-desc">Estamos en L'Altet, al lado del aeropuerto de Alicante. Llegas volando y ya estamos ahi esperandote.</p></div>
-    </div>
-    <div class="cf">
-      <div class="cf-icon"><svg viewBox="0 0 16 16" fill="none" stroke="#f07b20" stroke-width="2" stroke-linecap="round"><path d="M2 14 L5 5 L8 10 L11 3 L14 14"/></svg></div>
-      <div><div class="cf-title">Rutas para todos los niveles</div><p class="cf-desc">Paseo litoral sin desnivel, carreteras del Montgo o senderos del Parque Natural de la Serra Gelada.</p></div>
-    </div>
-    <div class="cf">
-      <div class="cf-icon"><svg viewBox="0 0 16 16" fill="none" stroke="#f07b20" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="8" r="6"/><path d="M8 5 L8 8 L11 10"/></svg></div>
-      <div><div class="cf-title">Clima perfecto todo el año</div><p class="cf-desc">Temperatura media de 18C. Mas de 300 dias de sol. Se puede rodar todo el año.</p></div>
+<section style="display:grid;grid-template-columns:1fr 1fr;min-height:560px" class="coast-section">
+  <div class="coast-visual">
+    <svg viewBox="0 0 360 480" fill="none" style="width:100%;max-width:380px;opacity:.95">
+      <path d="M180,20 Q200,60 195,100 Q210,130 200,160 Q220,185 210,210 Q225,235 215,265 Q230,290 220,320 Q235,345 225,380 Q240,410 230,450 L360,450 L360,20 Z" fill="rgba(42,143,212,0.2)"/>
+      <path d="M180,20 Q200,60 195,100 Q210,130 200,160 Q220,185 210,210 Q225,235 215,265 Q230,290 220,320 Q235,345 225,380 Q240,410 230,450 L0,450 L0,20 Z" fill="rgba(240,123,32,0.06)"/>
+      <path d="M180,20 Q200,60 195,100 Q210,130 200,160 Q220,185 210,210 Q225,235 215,265 Q230,290 220,320 Q235,345 225,380 Q240,410 230,450" stroke="rgba(240,234,216,0.5)" stroke-width="2.5" fill="none"/>
+      <circle cx="200" cy="95" r="7" fill="#f07b20"/><text x="165" y="99" fill="rgba(240,234,216,.85)" font-size="12" font-family="sans-serif" font-weight="600">Denia</text>
+      <circle cx="205" cy="165" r="7" fill="#f07b20"/><text x="162" y="169" fill="rgba(240,234,216,.85)" font-size="12" font-family="sans-serif" font-weight="600">Calpe</text>
+      <circle cx="212" cy="225" r="9" fill="#f5c800" stroke="#f07b20" stroke-width="2"/><text x="130" y="229" fill="rgba(240,234,216,.95)" font-size="13" font-family="sans-serif" font-weight="700">Benidorm</text>
+      <circle cx="218" cy="290" r="7" fill="#f07b20"/><text x="170" y="294" fill="rgba(240,234,216,.85)" font-size="12" font-family="sans-serif" font-weight="600">Villajoyosa</text>
+      <circle cx="220" cy="355" r="11" fill="#f5c800" stroke="#f07b20" stroke-width="2.5"/><text x="128" y="359" fill="white" font-size="14" font-family="sans-serif" font-weight="700">ALICANTE</text>
+      <circle cx="215" cy="385" r="8" fill="#f07b20" stroke="#f5c800" stroke-width="2"/><text x="155" y="400" fill="rgba(240,234,216,1)" font-size="11" font-family="sans-serif" font-weight="700">L'ALTET</text>
+      <circle cx="228" cy="420" r="7" fill="#f07b20"/><text x="175" y="424" fill="rgba(240,234,216,.8)" font-size="12" font-family="sans-serif" font-weight="600">Torrevieja</text>
+      <path d="M200,95 Q203,130 205,165 Q208,195 212,225 Q215,258 218,290 Q219,323 220,355 Q217,370 215,385 Q221,403 228,420" stroke="#f07b20" stroke-width="2" fill="none" stroke-dasharray="6,4" opacity=".7"/>
+      <g transform="translate(310,50)"><circle cx="0" cy="0" r="22" fill="rgba(13,13,15,0.6)" stroke="rgba(240,234,216,0.15)" stroke-width="1"/><polygon points="0,-16 4,4 0,8 -4,4" fill="rgba(240,234,216,0.8)"/><polygon points="0,16 4,-4 0,-8 -4,-4" fill="rgba(240,234,216,0.3)"/><text x="0" y="-4" fill="rgba(240,234,216,0.9)" font-size="9" text-anchor="middle" font-family="sans-serif" font-weight="700">N</text></g>
+    </svg>
+  </div>
+  <div class="coast-content">
+    <div class="sec-lbl">Costa Blanca</div>
+    <h2 class="sec-title">NUESTRA<br><span class="grad-text">COSTA</span></h2>
+    <p style="font-size:15px;font-weight:300;line-height:1.75;color:rgba(240,234,216,.55);margin-top:12px">340 km de costas, sierras de hasta 1.558 m y mas de 300 dias de sol al ano. Alicante es el mejor escenario para montar en bici.</p>
+    <div class="coast-features">
+      <div class="cf">
+        <div class="cf-icon"><svg viewBox="0 0 16 16" fill="none" stroke="#f07b20" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="6" r="3"/><path d="M8 9 Q8 14 8 14"/><path d="M5 12 Q8 14 11 12"/></svg></div>
+        <div><div class="cf-title">5 min del aeropuerto</div><p class="cf-desc">Estamos en L'Altet, al lado del aeropuerto de Alicante. Llegas volando y ya estamos ahi esperandote.</p></div>
+      </div>
+      <div class="cf">
+        <div class="cf-icon"><svg viewBox="0 0 16 16" fill="none" stroke="#f07b20" stroke-width="2" stroke-linecap="round"><path d="M2 14 L5 5 L8 10 L11 3 L14 14"/></svg></div>
+        <div><div class="cf-title">Rutas para todos los niveles</div><p class="cf-desc">Paseo litoral sin desnivel, carreteras del Montgo o senderos del Parque Natural de la Serra Gelada.</p></div>
+      </div>
+      <div class="cf">
+        <div class="cf-icon"><svg viewBox="0 0 16 16" fill="none" stroke="#f07b20" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="8" r="6"/><path d="M8 5 L8 8 L11 10"/></svg></div>
+        <div><div class="cf-title">Clima perfecto todo el ano</div><p class="cf-desc">Temperatura media de 18C. Mas de 300 dias de sol. Se puede rodar todo el ano.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ROUTES -->
 <section class="sec" style="background:var(--black)" id="rutas">
-
   <div class="sec-lbl">Desde la tienda</div>
   <h2 class="sec-title">RUTA <span class="blue-text">COSTERA</span></h2>
   <p style="font-size:15px;font-weight:300;line-height:1.8;color:rgba(240,234,216,.5);max-width:600px;margin-bottom:48px">Sal del garaje y recorre el litoral de L'Altet hasta Carabassi. 7.7 km en bici (~30 min), cuatro paradas en la playa, sin tráfico. Añade estas paradas en Google Maps antes de salir.</p>
@@ -546,7 +560,6 @@ textarea.ff{resize:vertical;min-height:90px}
 
 <!-- STORY -->
 <section class="sec" id="story" style="background:var(--charcoal)">
-
   <div class="sec-lbl">Quienes somos</div>
   <h2 class="sec-title">NUESTRA <span class="grad-text">HISTORIA</span></h2>
   <div class="story-stats">
@@ -573,35 +586,46 @@ textarea.ff{resize:vertical;min-height:90px}
 
 <!-- TESTIMONIALS -->
 <section class="sec" style="background:var(--blue-dark);padding:72px 48px">
-
   <div class="sec-lbl" style="color:rgba(240,234,216,.5)">Lo que dicen</div>
   <h2 class="sec-title" style="color:#fff">CLIENTES</h2>
   <div class="test-grid">
-    <div class="tc"><div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="tq">"Very nice, communicative renter. We arranged the rent via WhatsApp, and the renter answered all the questions I had. We could pick up the bikes near a bus stop, and after giving the bikes back, the renter helped us get to the bus stop. He also recommended some places in Alicante and was just really nice. Bikes were wonderful — no problem with the mountainous roads. I'd recommend this place to anyone wanting to rent bikes."</p><div class="ta">Rozalia</div><div class="tl">Google Review ★★★★★</div></div>
-    <div class="tc"><div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="tq">"This one wonderful young man has a very good energy and helped me with my handbike without requesting anything back. He truly lives his passion."</p><div class="ta">Ward</div><div class="tl">Belgium · Google Review ★★★★★</div></div>
-    <div class="tc"><div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="tq">"My wife and I are delighted with Mario, who is passionate about bikes and a handyman. He rented us two bikes in perfect condition at unbeatable prices, even interrupting his work to bring them to our apartment in his van. He also recommended routes and places in the area. A pleasant experience and highly recommended."</p><div class="ta">Vicente Vega Poves</div><div class="tl">Local Guide · Google Review ★★★★★</div></div>
+    <div class="tc"><div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="tq">"Alquilamos las bicis de carretera 4 dias por la Costa Blanca. Perfectas, trato inmejorable. Repetiremos seguro."</p><div class="ta">Marc & Clara</div><div class="tl">Barcelona</div></div>
+    <div class="tc"><div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="tq">"Traje mi MTB destrozada y en 24 horas estaba como nueva. Honesto, rapido y barato. No hace falta mas."</p><div class="ta">James Holloway</div><div class="tl">Manchester, UK</div></div>
+    <div class="tc"><div class="stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="tq">"Organizaron todo para nuestro equipo de empresa, 12 personas. Las bicis y el trato fueron un 10."</p><div class="ta">Nuria Perez</div><div class="tl">Valencia</div></div>
   </div>
 </section>
 
+<!-- INFO BAR -->
+<div class="info-bar">
+  <div class="ib"><div class="ib-lbl">Direccion</div><div class="ib-val">Carrer del Mar, 16<br>03195 L'Altet, Alicante</div></div>
+  <div class="ib"><div class="ib-lbl">Telefono</div><div class="ib-val"><a href="tel:+34687288163">+34 687 288 163</a></div></div>
+  <div class="ib"><div class="ib-lbl">Horario</div><div class="ib-val">Lun–Vie: 9–14 / 17–20<br>Sab: 9–14 · Dom: Cerrado</div></div>
+  <div class="ib"><div class="ib-lbl">Instagram</div><div class="ib-val"><a href="https://instagram.com/gitanitobikes" target="_blank" rel="noopener">@gitanitobikes</a></div></div>
+</div>
 
 <!-- INSTAGRAM -->
-<section class="sec" style="background:var(--black);padding:72px 48px;text-align:center">
-  <div class="sec-lbl" style="justify-content:center">Siguenos en Instagram</div>
-  <h2 class="sec-title" style="font-size:clamp(28px,3.5vw,48px);margin:0 0 24px">@<span class="grad-text">GITANITOBIKES</span></h2>
-  <p style="font-size:15px;font-weight:300;color:rgba(240,234,216,.55);margin-bottom:32px">Rutas, bicis y vida en la Costa Blanca. Siguenos para no perderte nada.</p>
-  <a class="btn btn-o" href="https://instagram.com/gitanitobikes" target="_blank" rel="noopener" style="font-size:14px;padding:16px 40px">Ver perfil en Instagram</a>
+<section class="sec" style="background:var(--black);padding:72px 48px">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:16px">
+    <div><div class="sec-lbl">Siguenos</div><h2 class="sec-title" style="font-size:clamp(28px,3.5vw,48px);margin:0">@<span class="grad-text">GITANITOBIKES</span></h2></div>
+    <a class="btn btn-o" href="https://instagram.com/gitanitobikes" target="_blank" rel="noopener">Ver en Instagram</a>
+  </div>
+  <div class="ig-grid">
+    <div class="ig-ph"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg><span>Pronto</span></div>
+    <div class="ig-ph"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg><span>Pronto</span></div>
+    <div class="ig-ph"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg><span>Pronto</span></div>
+    <div class="ig-ph"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="white" stroke="none"/></svg><span>Pronto</span></div>
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section class="sec" id="contacto" style="background:var(--charcoal)">
-
   <div class="sec-lbl">Escribenos</div>
   <h2 class="sec-title">CONTACTO <span class="grad-text">& RESERVAS</span></h2>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:8px" class="contact-split">
     <div>
       <div style="margin-bottom:24px"><div class="ib-lbl">Direccion</div><div style="font-size:15px;line-height:1.7;color:var(--sand)">Carrer del Mar, 16<br>03195 L'Altet, Alicante, España</div></div>
       <div style="margin-bottom:24px"><div class="ib-lbl">Telefono</div><div style="font-size:15px"><a href="tel:+34687288163" style="color:var(--orange-light)">+34 687 288 163</a></div></div>
-      <div style="margin-bottom:24px"><div class="ib-lbl">Email</div><div style="font-size:15px"><a href="mailto:elgarajebikes@gmail.com" style="color:var(--orange-light)">elgarajebikes@gmail.com</a></div></div>
+      <div style="margin-bottom:24px"><div class="ib-lbl">Email</div><div style="font-size:15px"><a href="mailto:info@elgarajebikes.es" style="color:var(--orange-light)">info@elgarajebikes.es</a><br><span style="font-size:12px;color:var(--muted)">(actualizar proximamente)</span></div></div>
       <div style="margin-bottom:24px">
         <div class="ib-lbl">Horario</div>
         <table style="font-size:14px;line-height:2;width:100%">
@@ -622,7 +646,7 @@ textarea.ff{resize:vertical;min-height:90px}
             <div class="fg fg-2"><div><label>Nombre</label><input class="ff" type="text" id="c-nombre" placeholder="Tu nombre" required></div><div><label>Telefono</label><input class="ff" type="tel" id="c-tel" placeholder="+34 600 000 000"></div></div>
             <div><label>Email</label><input class="ff" type="email" id="c-email" placeholder="tu@email.com"></div>
             <div><label>En que podemos ayudarte?</label><select class="ff" id="c-asunto"><option value="" disabled selected>Seleccionar...</option><option>Alquiler de bicicleta</option><option>Reparacion / Taller</option><option>Puesta a punto</option><option>Presupuesto</option><option>Otra consulta</option></select></div>
-            <div><label>Mensaje</label><textarea class="ff" id="c-msg" placeholder="Cuéntanos que necesitas..."></textarea></div>
+            <div><label>Mensaje</label><textarea class="ff" id="c-msg" placeholder="Cuentanos que necesitas..."></textarea></div>
           </div>
           <button class="submit-btn" style="margin-top:16px;font-size:20px" onclick="submitContact()">ENVIAR MENSAJE</button>
           <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:12px">O llamanos al <a href="tel:+34687288163" style="color:var(--orange-light)">+34 687 288 163</a></p>

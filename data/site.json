@@ -1,0 +1,31 @@
+{
+  "name": "El Garaje Bikes",
+  "phone": "+34 641 310 550",
+  "phoneHref": "tel:+34641310550",
+  "phoneDigits": "34641310550",
+  "whatsapp": "https://wa.me/34641310550",
+  "email": "elgarajebikes@gmail.com",
+  "instagram": {
+    "handle": "@elgarajebikes",
+    "url": "https://www.instagram.com/elgarajebikes?igsh=MTBwZnBpNzBld3AxeQ=="
+  },
+  "address": {
+    "street": "Carrer del Mar, 16",
+    "postal": "03195",
+    "city": "L'Altet",
+    "region": "Alicante",
+    "country": "España",
+    "full": "Carrer del Mar, 16 · 03195 L'Altet, Alicante, España"
+  },
+  "hours": [
+    { "days": "Lun – Vie", "time": "9:00–14:00 / 17:00–20:00" },
+    { "days": "Sabado", "time": "9:00–14:00" },
+    { "days": "Domingo", "time": "Cerrado" }
+  ],
+  "nav": [
+    { "label": "Reparar", "action": "repair" },
+    { "label": "Alquilar", "action": "rent" },
+    { "label": "Nuestra Historia", "href": "#story" },
+    { "label": "Contacto", "href": "#contacto" }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "hero": {
+    "eyebrow": "L'Altet · Alicante · Costa Blanca",
+    "titleLines": [
+      { "text": "TU GARAJE", "className": "" },
+      { "text": "DE CONFIANZA", "className": "grad-text" },
+      { "text": "EN ALICANTE", "className": "blue-text" }
+    ],
+    "sub": "Alquiler y taller de bicicletas en <em>L'Altet, Alicante</em>. Trabajamos <em>todas las marcas</em>. Reparamos todo lo que rueda.",
+    "buttons": [
+      { "cls": "repair", "label": "Reparar", "sub": "Pedir cita en el taller", "action": "repair" },
+      { "cls": "rent", "label": "Alquilar", "sub": "Reserva tu bici", "action": "rent" },
+      { "cls": "story", "label": "Nuestra Historia", "sub": "Quiénes somos", "scrollTo": "story" },
+      { "cls": "contact-btn", "label": "Contacto", "sub": "Dónde estamos", "scrollTo": "contacto" }
+    ]
+  },
+  "marquee": [
+    "Alquiler de Bicis",
+    "Taller Especializado",
+    "Todas las Marcas",
+    "L'Altet · Alicante",
+    "Costa Blanca",
+    "Puesta a Punto",
+    "Reparacion Urgente",
+    "MTB · Carretera · Gravel · E-Bike"
+  ],
+  "services": {
+    "label": "Lo que hacemos",
+    "titlePre": "NUESTROS ",
+    "titleAccent": "SERVICIOS",
+    "intro": "Dos cosas y las dos bien hechas — reparamos lo que nos traigan y alquilamos bicis para explorar la Costa Blanca.",
+    "items": [
+      {
+        "id": "taller",
+        "num": "01 — TALLER",
+        "name": "REPARACION<br/>& MANTENIMIENTO",
+        "nameClass": "grad-text",
+        "desc": "Traenos tu bici — sea cual sea la marca o el modelo — y la dejamos lista para rodar. Frenos, cambios, rodamientos, cables, ruedas, suspension… lo que necesite. También reparamos patinetes eléctricos: baterías, frenos, neumáticos y electrónica.",
+        "tags": ["MTB", "Carretera", "Gravel", "E-Bike", "BMX", "Urbana", "Todas las marcas", "Patinete Eléctrico"],
+        "cta": { "label": "Pedir cita en el taller", "btnClass": "btn-o", "action": "repair" }
+      },
+      {
+        "id": "alquiler",
+        "num": "02 — ALQUILER",
+        "name": "ALQUILER<br/>DE BICICLETAS",
+        "nameClass": "blue-text",
+        "desc": "Bicis a punto para salir a rodar por la Costa Blanca. Recogela en L'Altet, casco incluido. Te recomendamos la mejor ruta al salir.",
+        "tags": ["Por horas", "Por dias", "Semanal", "Casco incluido", "Rutas recomendadas"],
+        "cta": { "label": "Reservar bicicleta", "btnClass": "btn-b", "action": "rent" }
+      }
+    ]
+  },
+  "fleet": {
+    "label": "Flota disponible",
+    "titlePre": "BICIS DE ",
+    "titleAccent": "ALQUILER",
+    "items": [
+      {
+        "type": "E-Bike",
+        "name": "Bici electrica",
+        "nameClass": "blue-text",
+        "desc": "Descubre mas kilometros sin cansarte. Motor de asistencia electrica. Ideal para rutas largas."
+      },
+      {
+        "type": "Urbana",
+        "name": "Bici urbana",
+        "nameClass": "grad-text",
+        "desc": "Para moverse por Alicante y el paseo maritimo. Portaequipaje y candado incluidos."
+      }
+    ],
+    "cta": { "prompt": "NO ENCUENTRAS<br/>LO QUE BUSCAS?", "label": "Consultar disponibilidad", "action": "rent" }
+  },
+  "coast": {
+    "label": "Costa Blanca",
+    "titleLines": ["NUESTRA", "COSTA"],
+    "intro": "340 km de costas, sierras de hasta 1.558 m y mas de 300 dias de sol al año. Alicante es el mejor escenario para montar en bici.",
+    "features": [
+      { "icon": "pin", "title": "5 min del aeropuerto", "desc": "Estamos en L'Altet, al lado del aeropuerto de Alicante. Llegas volando y ya estamos ahi esperandote." },
+      { "icon": "peaks", "title": "Rutas para todos los niveles", "desc": "Paseo litoral sin desnivel, carreteras del Montgo o senderos del Parque Natural de la Serra Gelada." },
+      { "icon": "clock", "title": "Clima perfecto todo el año", "desc": "Temperatura media de 18C. Mas de 300 dias de sol. Se puede rodar todo el año." }
+    ]
+  },
+  "routes": {
+    "label": "Desde la tienda",
+    "titlePre": "RUTA ",
+    "titleAccent": "COSTERA",
+    "intro": "Sal del garaje y recorre el litoral de L'Altet hasta Carabassi. 7.7 km en bici (~30 min), cuatro paradas en la playa, sin tráfico. Añade estas paradas en Google Maps antes de salir.",
+    "stops": [
+      { "badge": "S", "kind": "start", "name": "El Garaje Bikes", "addr": "Carrer del Mar, 16 · L'Altet", "note": "Punto de salida. Recoge tu bici, casco y consulta la ruta.", "connector": "~2 km · 8 min" },
+      { "badge": "A", "kind": "beach", "name": "Playa El Altet", "addr": "Unnamed Rd, 03195 Alicante", "note": "2 km de arena dorada virgen. Dunas protegidas, aguas tranquilas. Primera parada obligatoria.", "connector": "~2 km · 8 min" },
+      { "badge": "B", "kind": "beach", "name": "Gran Bahia", "addr": "Avinguda Isla de Menorca, 1 · Arenals del Sol", "note": "Chiringuito y paseo marítimo de Arenales del Sol. Buen sitio para descansar con vistas al mar.", "connector": "~1.5 km · 6 min" },
+      { "badge": "C", "kind": "beach", "name": "La Milla – Chiringuito", "addr": "Av. Sant Bartomeu, 50 · Arenals del Sol", "note": "El chiringuito más popular del tramo. Parada perfecta para un refresco antes de llegar a Carabassi.", "connector": "~2.2 km · 8 min" },
+      { "badge": "D", "kind": "dest", "name": "Platja del Carabassi", "addr": "Carrer Clot de Galvany · 03195 Alicante", "note": "900 m de playa virgen entre dunas y pinos. Bandera Azul. El final perfecto — o el punto de vuelta.", "connector": null }
+    ],
+    "summary": {
+      "label": "Recorrido completo",
+      "title": "L'ALTET → PLAYA → ARENALES → CARABASSI",
+      "meta": "7.7 km · ~30 min en bici · 4 paradas · Fácil",
+      "mapUrl": "https://www.google.com/maps/dir/BICICLETAS+GITANITO+BIKES+ALQUILER,+Carrer+del+Mar,+16,+03195+L'Altet,+Alicante/Playa+El+Altet,+Unnamed+Rd,+03195+Alicante/Gran+Bahia,+Avinguda+Isla+de+Menorca,+1,+03195+Arenals+del+Sol,+Alicante/La+Milla+Chiringuito+Los+Arenales+del+Sol,+Av.+Sant+Bartomeu+50,+03195+Alicante/Platja+del+Carabassi,+Carrer+Clot+de+Galvany,+03195+Alicante/",
+      "mapLabel": "Abrir ruta en Google Maps"
+    }
+  },
+  "story": {
+    "label": "Quienes somos",
+    "titlePre": "NUESTRA ",
+    "titleAccent": "HISTORIA",
+    "stats": [
+      { "n": "Australia", "nClass": "grad-text", "l": "Donde empezó todo" },
+      { "n": "L'Altet", "nClass": "blue-text", "l": "Nuestra casa" },
+      { "n": "1 Garaje", "nClass": "grad-text", "l": "El origen del nombre" }
+    ],
+    "paragraphs": [
+      "Todo empezó con el COVID. Estaba viviendo en Australia cuando el mundo se paró, y como tantos españoles en el extranjero, encontrar trabajo se volvió casi imposible. Sin rendirme, hice lo que sabía hacer: <strong>abrí mi garaje, cogí las herramientas y empecé a reparar bicis.</strong> De ahí viene el nombre.",
+      "Con lo aprendido en Australia, volví a Alicante. Para ganarme la vida compaginaba la <strong>carpintería</strong> con la <strong>pesca submarina</strong>, haciendo lo que había que hacer para salir adelante. Las bicis quedaron aparcadas un tiempo.",
+      "Pero la vida te cambia los planes. Una <strong>lesión buceando</strong> me obligó a dejarlo. Con el tiempo libre y las ganas intactas, decidí dar el salto: me matriculé en cursos de mecánica de bicicletas, aprendí en serio, y volví a hacer lo que ya hacía en Australia: <strong>arreglar y alquilar bicis desde casa.</strong> Empecé comprando bicis en <strong>Wallapop</strong>, arreglándolas y vendiéndolas, mientras el Instagram empezaba a crecer. Así nació <strong>Gitanito Bikes</strong>.",
+      "El nombre lo dice todo. La filosofía de no necesitar mucho para hacer las cosas bien, de ayudar sin complicaciones, de trabajar con el corazón. Empecé a subir reels a Instagram, rutas, reparaciones, el día a día, y la respuesta fue inmediata. <strong>La gente me seguía, me escribía, me pedía consejo.</strong> Ahí entendí que esto era lo mío.",
+      "Recordando ese garaje en Australia donde todo empezó, decidí darle un nombre nuevo a esta nueva etapa. <strong>El Garaje Bikes.</strong> El mismo espíritu de siempre, confianza, oficio y ganas, pero con una tienda de verdad, en L'Altet, a dos pedaladas del Mediterráneo."
+    ],
+    "ctas": [
+      { "label": "Pedir cita en el taller", "btnClass": "btn-o", "action": "repair" },
+      { "label": "Reservar una bici", "btnClass": "btn-b", "action": "rent" }
+    ]
+  },
+  "testimonials": {
+    "label": "Lo que dicen",
+    "title": "CLIENTES",
+    "items": [
+      { "quote": "Very nice, communicative renter. We arranged the rent via WhatsApp, and the renter answered all the questions I had. We could pick up the bikes near a bus stop, and after giving the bikes back, the renter helped us get to the bus stop. He also recommended some places in Alicante and was just really nice. Bikes were wonderful — no problem with the mountainous roads. I'd recommend this place to anyone wanting to rent bikes.", "author": "Rozalia", "source": "Google Review ★★★★★" },
+      { "quote": "This one wonderful young man has a very good energy and helped me with my handbike without requesting anything back. He truly lives his passion.", "author": "Ward", "source": "Belgium · Google Review ★★★★★" },
+      { "quote": "My wife and I are delighted with Mario, who is passionate about bikes and a handyman. He rented us two bikes in perfect condition at unbeatable prices, even interrupting his work to bring them to our apartment in his van. He also recommended routes and places in the area. A pleasant experience and highly recommended.", "author": "Vicente Vega Poves", "source": "Local Guide · Google Review ★★★★★" }
+    ]
+  },
+  "instagram": {
+    "label": "Siguenos en Instagram",
+    "handlePre": "@",
+    "handleAccent": "ELGARAJEBIKES",
+    "text": "Rutas, bicis y vida en la Costa Blanca. Siguenos para no perderte nada.",
+    "cta": "Ver perfil en Instagram"
+  },
+  "contact": {
+    "label": "Escribenos",
+    "titlePre": "CONTACTO ",
+    "titleAccent": "& RESERVAS",
+    "intro": "Quieres reservar una bici o consultar algo del taller? Escribenos y te respondemos enseguida.",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151!2d-0.5445!3d38.2835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzhvMTcnMDAuNiJOIDBvMzInNDAuMiJX!5e0!3m2!1ses!2ses!4v1",
+    "form": {
+      "note": "Quieres reservar una bici o consultar algo del taller? Escribenos y te respondemos enseguida.",
+      "subjects": ["Alquiler de bicicleta", "Reparacion / Taller", "Puesta a punto", "Presupuesto", "Otra consulta"],
+      "success": { "title": "MENSAJE ENVIADO", "sub": "Te responderemos lo antes posible. Hasta pronto en El Garaje!" }
+    }
+  },
+  "footer": {
+    "copy": "© 2025 El Garaje Bikes · Carrer del Mar, 16 · L'Altet, Alicante",
+    "links": [
+      { "label": "Aviso legal", "href": "#" },
+      { "label": "Privacidad", "href": "#" }
+    ]
+  },
+  "modals": {
+    "repair": {
+      "title": "PEDIR <span class=\"grad-text\">CITA</span>",
+      "text": "Envianos un WhatsApp y te responderemos en breve.",
+      "cta": "ABRIR WHATSAPP",
+      "ctaClass": ""
+    },
+    "rent": {
+      "title": "PRECIOS DE <span class=\"blue-text\">ALQUILER</span>",
+      "priceTables": [
+        { "name": "BICI ELECTRICA", "nameColor": "var(--blue-light)", "rows": [ { "k": "1 dia", "v": "€30" }, { "k": "3 dias", "v": "€70" }, { "k": "1 semana", "v": "€110" } ] },
+        { "name": "BICI ESTANDAR", "nameColor": "var(--orange-light)", "rows": [ { "k": "1 dia", "v": "€10" }, { "k": "3 dias", "v": "€25" }, { "k": "1 semana", "v": "€45" } ] }
+      ],
+      "text": "Envianos un WhatsApp y te responderemos en breve.",
+      "cta": "ABRIR WHATSAPP",
+      "ctaClass": "blue"
+    }
+  }
+}
